@@ -1,0 +1,362 @@
+@media (min-width: 6000px){
+    p{
+        font-size: 25px;
+    }
+}
+body{
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+#header{
+    z-index: 2;
+    position:fixed;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 340px;
+}
+#header li{
+    list-style-type: none;
+    margin: 0px 25px 0px 25px;
+}
+#header .nav-link:link{
+    text-decoration: none;
+    color: black;
+}
+#header .nav-link:visited{
+    color:black;
+}
+#precios li{
+    list-style-type: none;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+}
+#nav-bar{
+    display: flex;
+    justify-content: end;
+}
+.allsections{
+    position: relative;
+    top: 40px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "footer";
+}
+#section1{
+    margin-top: 20px;
+    grid-area: section1;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "titulo"
+    "formulario";
+}
+#section1 #email::placeholder{
+    font-size: 17px;
+    text-align: center;
+}
+#titulo{
+    grid-area: titulo;
+}
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-areas: 
+    "email"
+    "boton";
+    justify-content: center;
+}
+#email{
+    grid-area:email;
+    width: 250px;
+    height: 40px;
+}
+#submit{
+    grid-area: boton;
+    background-color: yellow;
+    font-weight: bold;
+    border-color: yellow;
+    margin-top: 20px;
+    font-size: 20px;
+    grid-area: boton;
+}
+#section2{
+    display: grid;
+    grid-template-areas: 
+    "materiales"
+    "envio"
+    "garantia";
+}
+#materiales{
+    margin-top: 60px;
+    grid-area: materiales;
+    display: grid;
+    grid-template-areas: 
+    "foto texto";
+}
+.img1{
+    width: 100px;
+    height: auto;
+    grid-area: foto;
+}
+.img1 img{
+    max-width: 100%;
+    height: auto;
+}
+.texto1{
+    margin-left: 30px;
+    grid-area: texto;
+}
+.texto1 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.texto1 p{
+    margin-top: -15px;
+}
+#envio{
+    margin-top: 45px;
+    display: grid;
+    grid-template-areas: 
+    "foto2 texto2";
+}
+#envio .img2{
+    width: 100px;
+    height: auto;
+    grid-area: foto2;
+}
+.img2 img{
+    max-width: 100%;
+    height: auto;
+}
+#envio .texto2{
+    grid-area: texto2;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+.texto2 h3{
+    font-size: 25px;
+}
+.texto2 p{
+    margin-top: -15px;
+}
+#garantia{
+    display: grid;
+    grid-template-areas: 
+    "foto3 texto3";
+    margin-top: 45px;
+}
+#garantia .foto3{
+    width: 100px;
+    height: auto;
+    grid-area: foto3;
+}
+#garantia .foto3 img{
+    max-width: 100%;
+    height: auto;
+}
+#garantia .texto3{
+    grid-area: texto3;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+#garantia .texto3 h3{
+    font-size: 25px;
+}
+#garantia .texto3 p{
+    margin-top: -15px;
+}
+.allsections #section3{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.allsections #section4{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.tenor{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.bajo{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.valvulas{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.tenor .title1{
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    padding: 15px 70px 15px 70px;
+}
+.content h3{
+    margin-top: 7px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.content ol{
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .centrarbtn{
+    display: grid;
+    justify-content: center;
+}
+.content button{
+    border-color: yellow;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Diseño del segundo bloque section4*/
+.bajo .title2{
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    padding: 15px 80px 15px 80px;
+}
+.bajo h3{
+    margin-top: 7px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.bajo ol{
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bajo .centrarbtn2{
+    display: grid;
+    justify-content: center;
+}
+.bajo button{
+    border-color: yellow;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+/*Estilo del tercer bloque section4*/
+.valvulas .title3{
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    padding: 15px 50px 15px 50px;
+}
+.valvulas h3{
+    margin-top: 7px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;   
+}
+.valvulas ol{
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.valvulas .centrarbtn3{
+    display: grid;
+    justify-content: center;
+}
+.valvulas button{
+    border-color: yellow;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Estilo pie de página*/
+.allsections footer{
+    background-color: rgb(209, 209, 209);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.allsections footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.allsections footer li{
+    list-style-type: none;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+.allsections footer a:link{
+    text-decoration: none;
+    color: black;
+}
+.allsections footer a:visited{
+    color: black;
+}
+.allsections footer span{
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: gray;
+}
